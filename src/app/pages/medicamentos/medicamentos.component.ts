@@ -10,7 +10,6 @@ import {
 import { Medicamento } from 'src/app/models/medicamento.model';
 import { PrimengModule } from 'src/app/primeng/primeng.module';
 import { MedicamentoService } from 'src/app/services/medicamento.service';
-import { VentaService } from 'src/app/services/venta.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -22,7 +21,6 @@ import Swal from 'sweetalert2';
 export class MedicamentosComponent implements OnInit {
   constructor(
     private medicamentoService: MedicamentoService,
-    private ventaService: VentaService,
     private _fb: FormBuilder
   ) {}
 
